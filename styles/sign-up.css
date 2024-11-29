@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sign-up {
+    text-align: center;
+}
+
+.sign-up-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-text {
+    display: inline-block;
+    width: 150px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    line-height: 32px;
+}
+
+.username,
+.email,
+.password,
+.password-confirmation,
+.phone-number{
+    padding: 4px 8px;
+    border: 2px solid dimgray;
+    border-radius: 4px;
+    display: inline-block;
+    width: 200px;
+}
+
+.doesnot-match {
+    border: 2px solid darkred;
+}
+
+.date-input {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 2px solid dimgray;
+    border-radius: 4px;
+}
+
+.agreement-label {
+    font-size: 13px;
+}
+
+.submit-button {
+    background-color: black;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: opacity 0.3s;
+}
+.submit-button:hover {
+    opacity: 0.8;
+}
+
+.password-indicator,
+.agreement-indicator {
+    display: inline-block;
+    font-size: 12px;
+    color: darkred;
+    margin-left: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.indicator {
+    opacity: 1;
+}

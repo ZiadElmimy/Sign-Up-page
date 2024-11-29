@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sign Up</title>
+      <link rel="icon" type="image/png" href="my-logo.png">
+      <link rel="stylesheet" href="styles/sign-up.css">
+  </head>
+  <body>
+    <h2 class="sign-up">Sign Up</h2>
+    <div class="sign-up-form">
+      <form>
+        <label class="label-text" for="username">Username:</label>
+        <input type="text" class="username" id="username" placeholder="Enter your username" required>
+        <br>
+        <label class="label-text" for="email">Email:</label>
+        <input type="email" class="email" id="email" placeholder="Enter your email">
+        <br>
+        <label class="label-text" for="password">Password:</label>
+        <input type="password" class="password" id="password" minlength="6" placeholder="Enter your password">
+        <br>
+        <label class="label-text" for="confirm-password">Confirm Password:</label>
+        <input type="password"  class="password-confirmation" id="confirm-password" minlength="6" placeholder="Confirm your password">
+        <p class="password-indicator">Password and password confirmation aren't match.</p>
+        <br>
+        <label class="label-text" for="phone-number">Phone:</label>
+        <input type="tel"  class="phone-number" id="phone-number" placeholder="Enter your phone number" pattern="010[0-9]{8}">
+        <br>
+        <label class="label-text" for="date-of-birth">Date of birth:</label>
+        <input type="date" class="date-input" id="date-of-birth">
+        <br>
+        <label class="label-text">Gender:</label>
+          <input type="radio" class="gender-input" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" class="gender-input" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        <br>
+        <div class="agreement">
+          <input type="checkbox" class="agreement-checkbox" id="agreement" value="disagree">
+          <label for="agreement" class="agreement-label">I agree to the terms and conditions</label>
+        </div>
+        <br>
+        <input type="submit" class="submit-button" value="Submit">
+        <p class="agreement-indicator">Agreement checkbox isn't checked.</p>
+      </form>
+    </div>
+    <script src="scripts/sign-up.js"></script>
+  </body>
+</html>
